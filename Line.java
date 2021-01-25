@@ -1,5 +1,5 @@
 package test;
-
+//Implementation of Line class
 public class Line {
 	public final float a,b;
 	public Line(float a, float b){
