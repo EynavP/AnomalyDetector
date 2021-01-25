@@ -1,5 +1,7 @@
 # AnomalyDetector
- Second year, computer science project.  This project implements an anomaly detector for flights.
+ Second year, computer science project.
+ 
+ This project implements an anomaly detector for flights.
  
  There are several milestones.
  
