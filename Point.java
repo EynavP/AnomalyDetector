@@ -1,5 +1,5 @@
 package test;
-
+//Implemate Point class
 public class Point {
 	public final float x,y;
 	public Point(float x, float y) {
