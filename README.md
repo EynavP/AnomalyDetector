@@ -15,3 +15,7 @@ To analyze an error, there is a "train" file we run over so we can set the limit
 After that, the real flight details are analyzed according to the train results and write a report about this specific flight.
 
 The classes that implement in this milestone are "AnomalyReport" , "CorrelatedFeatures", "SimpleAnomalyDetector", "TimeSeries" , "TimeSeriesAnomalyDetector".
+
+The Third milestone is to implement client and server sides. When a client connects to the server there are options he can choose what to do such as upload file, analyze and etc.
+
+The classes that implement i nthis milestone are "CLI", "Commands" and "FileIO".
