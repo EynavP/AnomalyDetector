@@ -56,7 +56,7 @@ public class TimeSeries
 		this.coralation = coralation;
 	}
 
-
+	//Analyze time series by file name
 	public TimeSeries(String csvFileName)
 	{
 		this.fileName=csvFileName;

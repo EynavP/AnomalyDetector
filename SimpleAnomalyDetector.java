@@ -8,6 +8,7 @@ public class SimpleAnomalyDetector implements TimeSeriesAnomalyDetector
 {
 	ArrayList<CorrelatedFeatures> correlatedArray = new ArrayList<CorrelatedFeatures>();
 
+	//Convert arraylist to float array
 	public float[] changeTofloat(ArrayList<Float> a)
 	{
 		float[] fArray = new float[a.size()];
@@ -17,6 +18,7 @@ public class SimpleAnomalyDetector implements TimeSeriesAnomalyDetector
 		}
 		return fArray;
 	}
+	//Convert x and y arrays to points array
 	public Point[] changeToPoint(float[]a,float[]b)
 	{
 		Point[] p = new Point[a.length];
@@ -26,6 +28,7 @@ public class SimpleAnomalyDetector implements TimeSeriesAnomalyDetector
 		}
 		return p;
 	}
+	//Checking if two features already corralated to each other
 	public boolean alreadyCor(String a,String b)
 	{
 		for(int i=0;i<this.correlatedArray.size();i++)
@@ -35,7 +38,7 @@ public class SimpleAnomalyDetector implements TimeSeriesAnomalyDetector
 		}
 		return false;
 	}
-	
+	//Preliminary stage before real test
 	public void learnNormal(TimeSeries ts) 
 	{
 		int size= ts.getColNum();
@@ -82,6 +85,7 @@ public class SimpleAnomalyDetector implements TimeSeriesAnomalyDetector
 			max=0;
 		}
 	}
+	//Analyze real flight
 	public List<AnomalyReport> detect(TimeSeries ts)
 	{
 		ArrayList<AnomalyReport> resultList = new ArrayList<AnomalyReport>();
@@ -105,7 +109,7 @@ public class SimpleAnomalyDetector implements TimeSeriesAnomalyDetector
 		}
 		return resultList;
 	}
-	
+	//Gettting the correlated Array
 	public List<CorrelatedFeatures> getNormalModel(){
 		return this.correlatedArray;
 	}
