@@ -18,4 +18,4 @@ The classes that implement in this milestone are "AnomalyReport" , "CorrelatedFe
 
 The Third milestone is to implement client and server sides. When a client connects to the server there are options he can choose what to do such as upload file, analyze and etc.
 
-The classes that implement i nthis milestone are "CLI", "Commands" and "FileIO".
+The classes that implement in this milestone are "CLI", "Commands", "Server" and "FileIO".
